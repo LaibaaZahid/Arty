@@ -1,0 +1,95 @@
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),url("back.webp");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-blend-mode: darken;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+
+.login{
+    -webkit-box-shadow:0px 0px 105px 45px rgba(195, 174, 10, 0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(195, 174, 10, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(195, 174, 10, 0.9);
+    height: 600px;
+    width: 550px;
+    margin-left: 30%;
+    background-color: rgba(32, 75, 13, 0.696);
+    background-blend-mode: darken;
+    margin-top: 10%;
+    opacity: 90%;
+    border-radius: 15px;
+    
+   
+   
+} 
+
+.header{
+    height: 12%;
+    background-color: rgb(7, 41, 2);
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-size: xx-large;
+    font-family: cursive;
+    padding: 2px;
+    color: rgb(249, 249, 249);
+    padding-bottom: 10px;
+    display: flex;
+   
+   
+    
+    
+}
+
+.header img{
+    height: 50px;
+    width: 50px;
+    margin-top: 5px;
+    padding: 5px;
+    
+}
+
+.header span{
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.loginform{
+    font-family: cursive;
+    font-size: 15px;
+    margin-left: 23%;
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255);
+    width: 45%;
+    padding: 30px;
+    opacity: 100%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.loginform input{
+    width: 220px;
+}
+
+
+.submitbtn{
+    margin-top: 20px;
+    background-color: rgb(15, 60, 8);
+    color: white;
+    width: 100px;
+    height: 30px;
+ 
+    border: 2px solid rgb(11, 61, 10);
+    border-radius: 10px;
+    
+}

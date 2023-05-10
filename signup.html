@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="login">
+        <div class="header">
+           <img src="logo.png" alt=""> 
+           <p>ARTY</p>
+        </div>
+
+        <form action="signup.jsp" class="loginform" method="POST" onsubmit="return validate();">
+         <p>Username:</p> 
+        <input id="username" type="text" name="username">
+        <p>Email:</p> 
+        <input id="email" type="email" name="email">
+        <p>Password:</p>
+        <input type="password" name="password" id="pass"> 
+        <p>Confirm Password:</p>
+        <input type="password" name="cpassword" id="cpass"> 
+        <p style="color: red; font-size: small;" id="error"></p>
+
+
+        <button onclick="return validate();" class="submitbtn" type="submit">Signup</button>
+
+        
+
+    </form>
+
+
+    </div>
+    
+    <script>
+
+        function validate(){
+            let p=document.getElementById("pass").value;
+            let cp = document.getElementById("cpass").value;
+            let u = document.getElementById("username").value;
+            let e = document.getElementById("email").value;
+            if(p == "" || cp=="" || u=="" || e==""){
+                document.getElementById("error").innerHTML = "All fields must be filled";
+                return false;
+            }
+            if(p != cp){
+                document.getElementById("error").innerHTML = "Password and Confirm Password does not match";
+                return false;
+            }
+            if(p.length < 8){
+                document.getElementById("error").innerHTML = "Password should be atleast 8 characters long";
+                return false;
+            }
+
+            return true;
+        }
+
+    </script>
+
+
+
+
+</body>
+</html>
